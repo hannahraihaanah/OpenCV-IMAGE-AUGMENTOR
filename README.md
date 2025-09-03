@@ -1,2 +1,4 @@
 # OpenCV-IMAGE-AUGMENTOR
-A Python script that applies common image augmentation techniques—such as rotation, flipping, and blurring—to automatically generate multiple modified versions of an image.
+This project is a practical tool for data augmentation, a critical step in training robust computer vision models. The Python script takes a source image and  creates an expanded dataset by applying various transformations, including rotation, flipping, and Gaussian blurring.
+This script demonstrates a flexible approach to augmentation. For example, it iteratively applies a Gaussian blur with a list of different kernel sizes (e.g., (3,3), (5,5), (7,7)) to generate multiple variations.
+This same principle is designed to be easily extended to other transformations. One could provide a list of angles for the rotate function (e.g., [-15, -10, 10, 15]) or different flip codes for the flip function to create a comprehensive and diverse dataset from a small number of source images. This modular design allows for the easy expansion of the data augmentation pipeline.
