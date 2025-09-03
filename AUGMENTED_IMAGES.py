@@ -77,8 +77,8 @@ else:
        
         blurred_image=gaussian_blur(img,kernel_size=size)
         filename = f"blurred_{size[0]}X{size[1]}.jpg"
-        #to sve the images in different files
-        cv.imwrite(os.path.join(output_dir,filename.jpg),blurred_image)
+        cv.imwrite(os.path.join(output_dir,filename),blurred_image)
+        #the filename we created already has jpg extension
         print(f"generated filename: {filename}")
         blurred_image_list.append(blurred_image)
        
